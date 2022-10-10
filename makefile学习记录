@@ -1,0 +1,12 @@
+makefile目的：定义某个可执行文件如何被编译和链接；
+
+makefile的核心内容：
+target ... : prerequisites ...
+    command
+    ...
+    ...
+target:可以时目标文件，可执行文件，或者一个标签，也就是我们最终的目的（生成文件或者某种操作）
+prerequisite：生成target需要依赖的文件或其他东西
+command：生成或完成target所需要做的具体操作命令
+
+makefile的执行规则：prerequisite中如果有一个以上的文件比target新，command所定义的命令将会被执行；
